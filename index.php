@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 $new_content = '';
 $content = '';
 $url = '';
-
+//
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $url = isset($_POST['url']) ? $_POST['url'] : '';
     $content = file_get_contents($url);
